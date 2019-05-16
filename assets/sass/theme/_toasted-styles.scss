@@ -1,0 +1,68 @@
+
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.toasted {
+    justify-content: flex-end !important;
+    padding: 0.25rem 1rem !important;
+    color: $white !important;
+    font-family: $body-font-family !important;
+
+    &__link {
+        padding-left: 1rem !important;
+        border-left: 1px solid transparentize($white, 0.5) !important;
+        margin-left: 1rem !important;
+        border-radius: 0 !important;
+        color: $white !important;
+
+        &::after {
+            padding-left: 0.25rem;
+            content: '\f054';
+            font-family: 'FontAwesome';
+        }
+
+        &:hover {
+            opacity: 0.7;
+            text-decoration: none !important;
+            transition: $default-transition-time;
+        }
+    }
+}
+
+.toast-danger {
+    background-color: $brand-danger !important;
+}
+
+.toast-warning {
+    background-color: $brand-warning !important;
+}
+
+.toast-info {
+    background-color: $brand-info !important;
+}
+
+.toast-status {
+    padding: 0.5rem 3rem !important;
+    background-color: $transparent-black !important;
+    border-radius: 0.5rem !important;
+}
+
+.toast-success {
+    background-color: $brand-success !important;
+    text-align: right !important;
+}

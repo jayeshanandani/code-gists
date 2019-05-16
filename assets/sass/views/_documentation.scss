@@ -1,0 +1,97 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.docs {
+    &__content-link {
+        display: block;
+        margin-bottom: 0.5rem;
+
+        &__icon {
+            color: $gray-400;
+        }
+
+        &:last-of-type {
+            margin-bottom: none;
+        }
+    }
+
+    &__toc {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1rem;
+    }
+
+    &__section {
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            padding-bottom: 0;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+
+    &__section-header {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__image {
+        border: 1px solid $card-border-color;
+        margin-bottom: 1rem;
+
+        &--two-third-width {
+            border: 1px solid $card-border-color;
+            margin-bottom: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                width: 66%;
+            }
+        }
+
+        &--half-width {
+            border: 1px solid $card-border-color;
+            margin-bottom: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                width: 50%;
+            }
+        }
+    }
+
+    &__key-value-list {
+        & > div:nth-of-type(odd) {
+            background-color: $striped-table-color;
+        }
+
+        &--container {
+            @include flex-parent();
+        }
+
+        &--key {
+            width: 50%;
+            padding: 0.5rem 1rem;
+            border-right: 1px solid $card-border-color;
+        }
+
+        &--value {
+            width: 50%;
+            padding: 0.5rem 1rem;
+        }
+    }
+}

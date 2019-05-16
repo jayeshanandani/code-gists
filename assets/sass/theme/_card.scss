@@ -1,0 +1,99 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.card {
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: $card-box-shadow;
+
+    &--narrow {
+        @include media-breakpoint-up(lg) {
+            margin: 0 10rem;
+        }
+    }
+
+    &-header {
+        padding: 1rem;
+        background: white;
+
+        @include media-breakpoint-up(md) {
+            padding: 1rem 2rem;
+        }
+    }
+
+    &-body {
+        padding: 1rem;
+
+        @include media-breakpoint-up(md) {
+            padding: 2rem;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.35rem;
+        float: left;
+        font-size: 1.25rem;
+    }
+
+    &__title-icon {
+        padding-right: 0.5rem;
+        color: $brand-primary;
+    }
+
+    &__action-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__action-btn--emphasis {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    &__info-label {
+        padding-top: 0.125rem;
+        color: $brand-info;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__info-stat {
+        color: $heading-font-color;
+
+        &.truncate {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &__column-pad {
+        &--right {
+            padding-right: 2rem;
+        }
+
+        &--left {
+            padding-left: 2rem;
+        }
+    }
+}

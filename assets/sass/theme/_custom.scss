@@ -1,0 +1,151 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.default-text-color {
+    color: $text-color;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.mobile-button {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+        width: auto;
+    }
+}
+
+.required::after {
+    color: $brand-danger;
+    content: ' *';
+}
+
+.cursor {
+    &-pointer {
+        cursor: pointer;
+    }
+
+    &-default {
+        cursor: default;
+    }
+}
+
+.fa.status-icon {
+    font-size: 1.5rem;
+}
+
+.oflow {
+    &-auto {
+        overflow: auto;
+    }
+}
+
+// VueTables pagination
+.VuePagination {
+    nav {
+        width: 100%;
+    }
+}
+
+.btn-on {
+    background-color: $brand-success;
+
+    &:hover {
+        background-color: darken($brand-success, 15%);
+        text-decoration: none;
+    }
+
+    @include power-btn();
+}
+
+.btn-off {
+    background-color: $brand-inactive;
+
+    &:hover {
+        background-color: darken($brand-inactive, 15%);
+        text-decoration: none;
+    }
+
+    @include power-btn();
+}
+
+.btn-active {
+    background-color: $brand-success;
+
+    @include status-btn();
+}
+
+.btn-inactive {
+    background-color: $brand-inactive;
+
+    @include status-btn();
+}
+
+.token-border {
+    border-color: rgba(40, 167, 69, 0.5) !important;
+
+    &-a {
+        color: #28a745 !important;
+    }
+}
+
+.brands-height {
+    max-height: 24rem;
+    overflow-y: auto;
+}
+
+.scroll-view-table {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.breadcrumb {
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+.breadcrumb-item.active {
+    color: #527fa7ab;
+}
+
+.btn-disable {
+    cursor: not-allowed !important;
+}
+
+.tag-highlight {
+    @include tags();
+}
+
+.dynamic-options-container {
+    padding-left: 1rem;
+    border-left: 0.25rem solid $card-border-color;
+    margin-top: 0.5rem;
+}
+
+.flex {
+    &-auto {
+        flex: auto;
+    }
+}

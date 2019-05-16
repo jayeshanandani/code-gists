@@ -1,0 +1,160 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+// Body
+$body-bg: #f5f8fa;
+$app-bkg: #eceff1;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #38aaea;
+$brand-info: #8eb4cb;
+$brand-success: #77d33c;
+$brand-warning: #f90;
+$brand-danger: #dc3545;
+$brand-utility: #b158b1;
+$brand-inactive: #a2a5a7;
+
+// UI
+$card-border-color: #dedede;
+$card-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+$card-border-radius: 0.25rem;
+$default-input-border-color: #ced4da;
+
+$transparent-black: rgba(0, 0, 0, 0.5);
+$default-transition-time: 0.3s;
+$striped-table-color: rgba(75, 170, 224, 0.075);
+$table-highlight-color: rgba(75, 170, 224, 0.15);
+$inset-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+
+// Typography
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$text-color: #81929c;
+
+$heading-font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
+$heading-font-color: #26526b;
+$body-font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
+$body-font-color: $text-color;
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-dropdown-left-color: #468caf;
+$navbar-dropdown-right-color: #399c67;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Screen widths
+$screen-xxl: 1450px;
+
+// Basic spacing helper classes
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pt-1 {
+    padding-top: 0.25rem;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.pt-3 {
+    padding-top: 0.75rem;
+}
+
+.pt-4 {
+    padding-top: 1rem;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pb-1 {
+    padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}

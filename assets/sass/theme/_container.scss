@@ -1,0 +1,36 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.content-container {
+    padding: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        padding: 3rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 3rem 5rem;
+    }
+
+    // we have to stop UI from getting wider. This sets a max width
+    // for a fully stretched window on a large monitor.
+    @media (min-width: 1500px) {
+        max-width: 1750px;
+        margin: 0 auto;
+    }
+}

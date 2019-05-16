@@ -1,0 +1,91 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.default-modal {
+    &__body {
+        padding: 1rem;
+    }
+
+    &__form {
+        width: 100%;
+    }
+}
+
+.modal-dialog {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+
+    @include media-breakpoint-up(sm) {
+        width: auto;
+        margin: 2rem auto;
+    }
+}
+
+.modal-content {
+    height: 100vh;
+
+    @include media-breakpoint-up(sm) {
+        height: auto;
+    }
+}
+
+.modal {
+    &-header {
+        border-bottom: none;
+        background: $app-bkg;
+    }
+
+    &-footer {
+        border-top: none;
+        background: $app-bkg;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+
+    &__scroll-content {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: $transparent-black;
+    transition: opacity $default-transition-time ease;
+}
+
+.modal-fade-enter,
+.modal-fade-leave-active {
+    opacity: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.open-modal-no-scroll {
+    overflow: hidden;
+}

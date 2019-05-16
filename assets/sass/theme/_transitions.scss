@@ -1,0 +1,14 @@
+
+// toggle slide
+.slide-toggle-enter-active,
+.slide-toggle-leave-active {
+    overflow: hidden;
+    max-height: 700px;
+    transition: all 0.4s ease;
+}
+
+.slide-toggle-enter,
+.slide-toggle-leave-to {
+    max-height: 0;
+    opacity: 0;
+}

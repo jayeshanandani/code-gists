@@ -1,0 +1,47 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.tags-container {
+    .vue-input-tag-wrapper {
+        padding: 0.25rem 0.5rem;
+        border: 1px solid $default-input-border-color;
+        -webkit-appearance: none;
+        border-radius: 0.25rem;
+
+        .input-tag {
+            @include tags();
+
+            border: none;
+            margin-right: 0.5rem;
+            font-size: 1rem;
+
+            .remove {
+                &::before {
+                    padding-left: 0.5rem;
+                    color: #fff;
+                    content: '\f00d';
+                    font-family: 'FontAwesome';
+                }
+            }
+        }
+
+        .new-tag {
+            font-size: 1rem;
+        }
+    }
+}

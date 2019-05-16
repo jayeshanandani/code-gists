@@ -1,0 +1,53 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+// Base Styles
+@import '~bootstrap/scss/bootstrap';
+@import 'theme/variables';
+@import 'theme/mixins';
+@import 'theme/transitions';
+@import 'theme/bootstrap-custom';
+@import 'theme/custom';
+@import 'theme/card';
+@import 'theme/container';
+@import 'theme/default-tables';
+@import 'theme/forms';
+@import 'theme/loading-spinner';
+@import 'theme/modal';
+@import 'theme/navbar';
+@import 'theme/toasted-styles';
+@import 'theme/tooltip';
+
+// Components
+@import 'components/input-tags';
+@import 'components/multiselect';
+
+// Views
+@import 'views/404';
+@import 'views/documentation';
+@import 'views/home';
+
+// Microservice-specific Styles
+@import 'main';
+
+html,
+body,
+#app {
+    height: 100%;
+    background: $app-bkg;
+}

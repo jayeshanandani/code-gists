@@ -1,0 +1,78 @@
+
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.file-input {
+    margin: 2rem 0;
+
+    &__header {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__label {
+        margin-bottom: 1rem;
+    }
+
+    &__input-container {
+        padding: 1rem 0;
+        border-bottom: 1px solid $card-border-color;
+        margin: 0;
+
+        &:first-of-type {
+            padding-top: 0;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    &__upload-container {
+        padding: 1rem;
+        border: 1px solid $card-border-color;
+        background: whitesmoke;
+        border-radius: 0.25rem;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .label-control {
+        margin-bottom: 0;
+    }
+}
+
+.form {
+    &__submit {
+        margin-top: 2rem;
+    }
+
+    &__update-container {
+        padding: 2rem;
+        border: 1px solid $card-border-color;
+        background: whitesmoke;
+        border-radius: 0.25rem;
+    }
+
+    &__warning-below {
+        padding-top: 0.5rem;
+    }
+}

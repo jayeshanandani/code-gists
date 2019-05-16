@@ -1,0 +1,149 @@
+
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+// if a VueTable: apply default-table to the Vue component tag.
+// if a standard html table: apply to table's container element.
+.default-table {
+
+    // standard table layout
+    table-layout: fixed;
+
+    // vue table layout
+    & .VueTables__table {
+        table-layout: fixed;
+    }
+
+    & tr {
+        border-bottom: 1px solid $card-border-color;
+    }
+
+    & td {
+        padding: 1rem 0 1rem 0.5rem;
+    }
+
+    & th {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid $card-border-color;
+        color: $heading-font-color;
+        vertical-align: middle;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: $striped-table-color;
+    }
+
+    .table-striped tbody tr {
+        &:hover {
+            background-color: $table-highlight-color;
+            cursor: pointer;
+            transition: $default-transition-time;
+        }
+    }
+
+    .table-bordered td {
+        border: none;
+    }
+}
+
+.VueTables {
+    &__search-field {
+        display: block;
+    }
+
+    .form-inline label {
+        display: block;
+    }
+
+    &__search {
+        margin-bottom: 1.5rem;
+        float: none;
+    }
+
+    &__highlight b {
+        color: $brand-primary;
+    }
+
+    th {
+        border: 1px solid transparent;
+        border-bottom: 1px solid $card-border-color;
+        color: $heading-font-color !important;
+    }
+
+    &__sortable,
+    &__actions-header {
+        position: relative;
+        overflow: hidden;
+        padding-left: 0.5rem !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__sortable {
+        cursor: pointer;
+    }
+
+    &__sort-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        color: $brand-primary;
+        float: none;
+        transform: translateY(-50%);
+
+        @include media-breakpoint-up(lg) {
+            right: 0.15rem;
+        }
+    }
+
+    &__icon {
+        color: $brand-info;
+        font-size: 1rem;
+    }
+
+    &__heading {
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+.actions {
+    &__link {
+        padding-right: 0.25rem;
+        color: $brand-primary;
+
+        &:hover {
+            color: darken($brand-primary, 15%);
+            text-decoration: none;
+            transition: $default-transition-time;
+        }
+
+        &__text {
+            display: none;
+
+            @include media-breakpoint-up(lg) {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__icon {
+        padding-right: 0.25rem;
+    }
+}

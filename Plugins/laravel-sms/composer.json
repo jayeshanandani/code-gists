@@ -1,0 +1,31 @@
+{
+    "name": "webelightdev/laravel-sms",
+    "description": "package Sms Integration",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saifi Khambhati",
+            "email": "saifik@webelight.com"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^5.19"
+    },
+    "autoload": {
+        "psr-4": {       
+            "Webelightdev\\LaravelSms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webelightdev\\LaravelSms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms" : "Webelightdev\\LaravelSms\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

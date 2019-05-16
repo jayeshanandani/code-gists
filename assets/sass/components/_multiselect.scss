@@ -1,0 +1,42 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+// overrides for the vue-multiselect component's default styles
+.multiselect {
+    &__tags {
+        .multiselect__tag {
+            padding: 0.25rem 0.5rem;
+            margin-bottom: 0 !important;
+            background-color: $brand-info;
+
+            &-icon {
+                position: static;
+
+                &::after {
+                    color: #fff;
+                    content: '\f00d';
+                    font-family: 'FontAwesome';
+                }
+
+                &:hover {
+                    background-color: $brand-info !important;
+                }
+            }
+        }
+    }
+}

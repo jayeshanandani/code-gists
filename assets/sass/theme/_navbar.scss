@@ -1,0 +1,121 @@
+//                             _
+//                           .' `'.__
+//                          /      \ `'"-,
+//         .-''''--...__..-/ .     |      \
+//       .'               ; :'     '.  a   |
+//      /                 | :.       \     =\
+//     ;                   \':.      /  ,-.__;.-;`
+//    /|     .              '--._   /-.7`._..-;`     THIS FILE WILL BE OVERWRITTEN BY MS-TEMPLATE.
+//   ; |       '                |`-'      \  =|      PLEASE EDIT THERE IF YOU WISH TO MAKE CHANGES.
+//   |/\        .   -' /     /  ;         |  =/
+//   (( ;.       ,_  .:|     | /     /\   | =|
+//    ) / `\     | `""`;     / |    | /   / =/
+//      | ::|    |      \    \ \    \ `--' =/
+//     /  '/\    /       )    |/     `-...-`
+//    /    | |  `\    /-'    /;
+//    \  ,,/ |    \   D    .'  \
+//     `""`   \  nnh  D_.-'L__nnh
+
+.navbar {
+    padding: 0;
+    background-image: linear-gradient(to right, $brand-primary, $brand-success);
+    box-shadow: $card-box-shadow;
+
+    &__user {
+        &-img {
+            border-radius: 50%;
+        }
+
+        &-container {
+            @include flex-parent();
+
+            align-items: center;
+        }
+
+        &-item {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+    }
+
+    &__ms-container {
+        @include flex-parent();
+
+        align-items: center;
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(lg) {
+            border-right: 1px solid transparentize($heading-font-color, 0.8);
+        }
+    }
+
+    &__ms-width {
+        min-width: 11rem;
+    }
+
+    &__logo {
+        min-width: 2rem;
+        max-width: 2.25rem;
+        margin-right: 1rem;
+    }
+
+    .nav-link:hover {
+        transition: $default-transition-time;
+    }
+
+    &-nav {
+        align-items: center;
+    }
+
+    &__text-uppercase {
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .dropdown {
+        &--left {
+            &.show {
+                background: $navbar-dropdown-left-color;
+            }
+        }
+
+        &--right {
+            &.show {
+                background: $navbar-dropdown-right-color;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        border: none;
+        margin: 0;
+
+        .dropdown-item {
+            background-color: inherit;
+            font-weight: 500;
+
+            &:hover {
+                color: lighten($brand-primary, 10%);
+            }
+        }
+
+        &.menu-left {
+            background-color: $navbar-dropdown-left-color;
+            border-radius: 0 0 0.25rem;
+        }
+
+        &.menu-right {
+
+            // necessary for dynamic width dropdown (based on user-name length)
+            position: absolute;
+            right: 0;
+            left: 0;
+            background-color: $navbar-dropdown-right-color;
+            border-radius: 0 0 0 0.25rem;
+        }
+    }
+}
